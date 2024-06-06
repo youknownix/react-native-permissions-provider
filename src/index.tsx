@@ -96,7 +96,7 @@ export function PermissionsProvider({ children }: { children: ReactElement }) {
           resolve({ granted: false, status: RESULTS.UNAVAILABLE });
         }
       }),
-    [nativePermissions]
+    []
   );
 
   const checkPermission = useCallback(
